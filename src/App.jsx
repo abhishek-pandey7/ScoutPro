@@ -87,16 +87,16 @@ function App() {
         <div className="absolute bottom-0 inset-x-0 h-[400px] bg-gradient-to-t from-emerald-50 to-transparent"></div>
       </div>
 
-      <div className="container mx-auto px-4 py-16 flex flex-col items-center min-h-screen">
-        <div className="text-center mb-16 animate-fade-in-up">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/90 backdrop-blur-sm border border-emerald-200 shadow-sm text-xs font-bold tracking-widest text-emerald-700 uppercase mb-8">
+      <div className="container mx-auto px-4 py-8 md:py-16 flex flex-col items-center min-h-screen">
+        <div className="text-center mb-8 md:mb-16 animate-fade-in-up">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/90 backdrop-blur-sm border border-emerald-200 shadow-sm text-[10px] md:text-xs font-bold tracking-widest text-emerald-700 uppercase mb-6 md:mb-8">
             <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
             Performance Analytics Engine
           </div>
-          <h1 className="text-6xl md:text-8xl font-black text-white tracking-tighter uppercase leading-none drop-shadow-lg">
+          <h1 className="text-5xl md:text-8xl font-black text-white tracking-tighter uppercase leading-none drop-shadow-lg">
             Scout<span className="text-emerald-300 mx-1">/</span>Pro
           </h1>
-          <p className="mt-8 text-white text-lg max-w-2xl mx-auto font-bold leading-relaxed drop-shadow-md">
+          <p className="mt-4 md:mt-8 text-white text-base md:text-lg max-w-2xl mx-auto font-bold leading-relaxed drop-shadow-md px-4">
             Discover player statistics, analyze performance metrics, and dive deep into precise global football data.
           </p>
         </div>

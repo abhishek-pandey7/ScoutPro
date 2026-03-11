@@ -42,7 +42,7 @@ function SearchBar({ onSearch, isLoading }) {
           <select
             value={season}
             onChange={(e) => setSeason(e.target.value)}
-            className="w-full h-full bg-transparent border-0 text-slate-700 text-base focus:ring-0 block pl-12 pr-10 py-4 font-bold appearance-none cursor-pointer outline-none"
+            className="w-full h-full bg-transparent border-0 text-slate-700 text-base focus:ring-0 block pl-12 pr-10 py-4 font-bold appearance-none cursor-pointer outline-none min-h-[56px]"
           >
             {years.map(y => (
               <option key={y} value={y} className="bg-white text-slate-800 font-medium">{y} / {parseInt(y)+1}</option>
@@ -58,7 +58,7 @@ function SearchBar({ onSearch, isLoading }) {
         <button
           type="submit"
           disabled={isLoading || !player.trim()}
-          className="w-full md:w-auto shrink-0 bg-slate-900 hover:bg-slate-800 text-white font-bold text-base px-8 py-4 rounded-xl transition-all disabled:opacity-60 disabled:cursor-not-allowed group relative overflow-hidden flex items-center justify-center min-w-[140px]"
+          className="w-full md:w-auto shrink-0 bg-slate-900 hover:bg-slate-800 text-white font-bold text-base px-8 py-4 rounded-xl transition-all disabled:opacity-60 disabled:cursor-not-allowed group relative overflow-hidden flex items-center justify-center min-w-[140px] min-h-[56px]"
         >
           {isLoading ? (
             <span className="flex items-center justify-center gap-2">
