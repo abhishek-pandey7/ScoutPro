@@ -7,11 +7,9 @@
 
 ScoutPro is a premium, beautifully designed football analytics application that allows users to search for players and view highly detailed statistical breakdowns of their performance across different seasons and leagues. 
 
-The application utilizes a rich, data-dense **Light Theme (Detailed)** UI, drawing inspiration from professional sports analytics platforms.
-
 ---
 
-## 🌟 Key Features
+## Key Features
 
 * **Advanced Search Interface**: Clean, minimalist search bar with integrated loading states and dynamic season selection.
 * **Premium Brutalist-Inspired UI**: Flat, analytical light theme avoiding emojis and favoring crisp layout, shadows, and clear typography.
@@ -21,7 +19,7 @@ The application utilizes a rich, data-dense **Light Theme (Detailed)** UI, drawi
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 * **Frontend Framework**: React 18
 * **Styling**: Tailwind CSS v3 (Custom Animations & Keyframes)
@@ -30,7 +28,7 @@ The application utilizes a rich, data-dense **Light Theme (Detailed)** UI, drawi
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -65,21 +63,10 @@ Ensure you have Node.js installed on your machine. You will also need an active 
 5. **Open the App**
    Navigate to `http://localhost:5173/` in your browser.
 
----
-
-## 🎨 UI Design Principles
-
-ScoutPro was explicitly designed to look like a professional tool rather than a casual fan app:
-1. **No Emojis**: All metrics are represented via clean text or custom SVG elements.
-2. **Authentic Imagery**: Team and League crests are pulled directly from the API.
-3. **Data Hierarchy**: Progress bars and metric cubes visualize data instantly without overwhelming the user. Performance is strictly graded into three visual tiers:
-   - 🔴 **Red**: Sub-par / Below Average
-   - 🟡 **Yellow**: Average / Good
-   - 🟢 **Green**: Excellent / World Class
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/your-username/scout-pro/issues).
 
