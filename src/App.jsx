@@ -59,23 +59,44 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-slate-50 font-sans text-slate-800 relative z-0 selection:bg-slate-200 selection:text-slate-900 pb-20">
-      {/* Background decoration - Detailed Light Grid */}
-      <div className="fixed inset-0 pointer-events-none -z-10">
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,#e2e8f0_1px,transparent_1px),linear-gradient(to_bottom,#e2e8f0_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] opacity-40"></div>
-        <div className="absolute top-0 inset-x-0 h-[500px] bg-gradient-to-b from-white via-slate-50/50 to-slate-50"></div>
+    <div className="min-h-screen bg-emerald-50 font-sans text-slate-900 relative z-0 selection:bg-emerald-200 selection:text-emerald-900 pb-20">
+      {/* Background decoration - Football Pitch Experience */}
+      <div className="fixed inset-0 pointer-events-none -z-10 bg-gradient-to-b from-emerald-600 via-emerald-500 to-emerald-50">
+        {/* Grass Texture Overlay */}
+        <div className="absolute inset-0 opacity-[0.15] bg-[url('https://www.transparenttextures.com/patterns/natural-paper.png')]"></div>
+        
+        {/* Grid Overlay for 'Detail' */}
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff_1px,transparent_1px),linear-gradient(to_bottom,#ffffff_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_80%_80%_at_50%_0%,#fff_20%,transparent_100%)] opacity-20"></div>
+
+        {/* Visible Pitch SVG */}
+        <div className="absolute inset-0 flex items-center justify-center opacity-30 overflow-hidden">
+          <svg width="100%" height="100%" viewBox="0 0 800 1200" fill="none" xmlns="http://www.w3.org/2000/svg" className="max-w-7xl rotate-90 md:rotate-0 text-white">
+            <rect x="50" y="50" width="700" height="1100" stroke="currentColor" strokeWidth="4"/>
+            <path d="M50 600H750" stroke="currentColor" strokeWidth="4"/>
+            <circle cx="400" cy="600" r="100" stroke="currentColor" strokeWidth="4"/>
+            <rect x="250" y="50" width="300" height="180" stroke="currentColor" strokeWidth="4"/>
+            <rect x="250" y="970" width="300" height="180" stroke="currentColor" strokeWidth="4"/>
+            <rect x="330" y="50" width="140" height="60" stroke="currentColor" strokeWidth="4"/>
+            <rect x="330" y="1090" width="140" height="60" stroke="currentColor" strokeWidth="4"/>
+            <path d="M300 230C320 260 480 260 500 230" stroke="currentColor" strokeWidth="4"/>
+            <path d="M300 970C320 940 480 940 500 970" stroke="currentColor" strokeWidth="4"/>
+          </svg>
+        </div>
+
+        {/* Bottom Fade out */}
+        <div className="absolute bottom-0 inset-x-0 h-[400px] bg-gradient-to-t from-emerald-50 to-transparent"></div>
       </div>
 
       <div className="container mx-auto px-4 py-16 flex flex-col items-center min-h-screen">
         <div className="text-center mb-16 animate-fade-in-up">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-slate-200 shadow-sm text-xs font-bold tracking-widest text-slate-500 uppercase mb-8">
-            <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/90 backdrop-blur-sm border border-emerald-200 shadow-sm text-xs font-bold tracking-widest text-emerald-700 uppercase mb-8">
+            <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
             Performance Analytics Engine
           </div>
-          <h1 className="text-6xl md:text-8xl font-black text-slate-900 tracking-tighter uppercase leading-none drop-shadow-sm">
-            Scout<span className="text-slate-300 mx-1">/</span>Pro
+          <h1 className="text-6xl md:text-8xl font-black text-white tracking-tighter uppercase leading-none drop-shadow-lg">
+            Scout<span className="text-emerald-300 mx-1">/</span>Pro
           </h1>
-          <p className="mt-8 text-slate-500 text-lg max-w-2xl mx-auto font-medium leading-relaxed">
+          <p className="mt-8 text-white text-lg max-w-2xl mx-auto font-bold leading-relaxed drop-shadow-md">
             Discover player statistics, analyze performance metrics, and dive deep into precise global football data.
           </p>
         </div>
